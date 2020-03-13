@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Layout</title>
+	<style>
+		.single-page-content{
+			border: solid 1px;
+			width: 40%;
+			min-height: 80vh;
+			margin: 10vh auto;
+			min-width: 450px;
+		}
+		.portfolio-grid{
+			display: grid;			
+			grid-template-columns: repeat(2, 1fr);
+			background: hsl(0, 0%, 100%);
+			grid-gap: 2rem;
+			padding: 2rem;
+			
+		}
+		.project-item{
+			box-shadow: 10px 10px 15px #7A7B5F;	
+			background: hsl(0, 0%, 20%);
+			border: solid 1px black;	
+		}
+		.project-item:hover{
+			transform: scale(1.1);
+			background: hsl(0, 0%, 30%);
+			border: solid 3px hsl(60, 100%, 85%);
+		}
+		.project-item a{
+			text-decoration: none;
+		}
+		.project-image {
+		  width: 100%;
+		  height: 12rem;
+		  object-fit: cover;
+		}
+		.project-title {
+		  text-align: center;
+		  font-size: 1.5rem;
+		  color: white;
+		}
+	</style>
+</head>
+<body>
+
+<div class="single-page-content">
+	<div class="portfolio-grid">
+		<div class="project-item">
+			<a href="http://1000mileworld.com/Portfolio/Piano/keyboard.html" target="_blank">
+	 <img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2019/09/twitterCard-piano.jpg" alt="JS keyboard project">
+		      <p class="project-title">Piano Keyboard in Javascript</p>
+		    </a>
+		</div>
+		<div class="project-item">
+			<a href="http://1000mileworld.com/Portfolio/Bunny/bunny.html" target="_blank">
+	 <img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2019/10/twitterCard-bunny.jpg" alt="CSS bunny animation">
+		      <p class="project-title">Bunny Animation in CSS</p>
+		    </a>
+		</div>
+		<div class="project-item">
+			<a href="http://1000mileworld.com/Portfolio/Flex/flexPanels.html" target="_blank">
+	 <img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2019/10/twitterCard-flexPanels.jpg" alt="Flexbox panels and bubble animation">
+		      <p class="project-title">Flexbox Panels with Bubbles</p>
+		    </a>
+		</div>
+		<div class="project-item">
+			<a href="http://1000mileworld.com/Portfolio/validate.html" target="_blank"><img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2019/12/twitterCard-validate-scaled.jpg" alt="Validate US phone number">
+				<p class="project-title">Regex Phone Number Validator</p>
+			</a>
+		</div>
+		<div class="project-item">
+			<a href="https://codepen.io/1000mileworld/full/OJPvdLj" target="_blank"><img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2020/01/quote-generator-2.jpg" alt="Quote Generator">
+				<p class="project-title">Quote Generator w/ React</p>
+			</a>
+		</div>
+		<div class="project-item">
+			<a href="https://codepen.io/1000mileworld/full/BayvmoN" target="_blank"><img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2020/01/calculator-scaled.jpg" alt="React Calculator">
+				<p class="project-title">React Calculator</p>
+			</a>
+		</div>
+		<div class="project-item">
+			<a href="https://codepen.io/1000mileworld/full/qBEwRvK" target="_blank"><img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2020/02/pomodoro2.jpg" alt="Pomodoro Clock">
+				<p class="project-title">Pomodoro Clock</p>
+			</a>
+		</div>
+		<div class="project-item">
+			<a href="http://1000mileworld.com/Portfolio/Whack-a-Mole/whack.html" target="_blank"><img class="project-image" src="https://1000mileworld.com/wp-content/uploads/2020/02/whack-a-mole.jpg" alt="Whack-a-Mole">
+				<p class="project-title">Whack-A-Mole</p>
+			</a>
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
